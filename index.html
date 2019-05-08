@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Barlow:500|Poppins:200" rel="stylesheet" />
+    <title>Movidom - Rent, Buy, Watch Movies and TV Online</title>
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="video-wrapper">
+            <video class="bg-video" src="video/GoT-8 Official Trailer.mp4" autoplay="true" muted="true"
+                loop="true"></video>
+        </div>
+
+        <!-- Top Nav Menu == Responsive -->
+        <nav class="top-nav">
+            <div class="brand">
+                <a class="logo" href="/movidom.ng"><img src="img/Movidom_Crop.png" alt="Movidom" /></a>
+            </div>
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <ul class="menu">
+                <li><a href="/index.html" id="current">Home</a></li>
+                <li><a href="/stream-buy">Stream/Buy</a></li>
+                <li><a href="#soon">Coming Soon</a></li>
+                <li><a href="Catalog/catalog.html">Catalog</a></li>
+                <li><a href="/About/About.html">About</a></li>
+                <li><i class="fas fa-search"></i></li>
+            </ul>
+        </nav>
+
+
+        <!-- Featured Content -->
+        <main class="featured">
+            <div class="featured-item line">
+                <p class="poppins out-now">Out Now</p>
+                <h2 class="mv-title barlow">Game of Thrones</h2>
+                <div class="poppins mv-summary">
+                    Began with the promise of an imminent threat on the world of men in
+                    a fictional medieval-fantasy continent called Westeros. In the
+                    opening scene, we see mysterious inhumane figures -- called White
+                    Walkers -- attack three men who are ranging in the far north of
+                    Westeros.
+                </div>
+                <a class="btn btn-primary poppins" href="#">Stream/Buy</a>
+                <!-- Add a pseudo element here to add a vertical line! -->
+            </div>
+        </main>
+
+        <!-- Latest Movies -->
+        <section class="latest-movies">
+            <div class="arrows prev"></div>
+            <div class="arrows next"></div>
+            <div class="domestic-releases latest-slider rls-align">
+                <p>
+                    Latest Domestic Releases |
+                    <a href="/watch-all" class="watch-all">Watch All</a>
+                </p>
+                <div class="drop-down">
+                    <form class="filter-movie">
+                        <select name="dropdown" class="filter-items filters">
+                            <option value="All Genres" selected>All Genres</option>
+                            <option value="Action">Action</option>
+                            <option value="Adventure">Adventure</option>
+                            <option value="Animation">Animation</option>
+                            <option value="Comedy">Comedy</option>
+                            <option value="Documentary">Documentary</option>
+                            <option value="Drama">Drama</option>
+                            <option value="Family">Family</option>
+                            <option value="Fantasy">Fantasy</option>
+                            <option value="Horror">Horror</option>
+                            <option value="Rom-Com">Rom-Com</option>
+                            <option value="Sci-Fi">Sci-Fi</option>
+                            <option value="Thriller">Thriller</option>
+                        </select>
+                    </form>
+                    <form class="filter-year">
+                        <select name="dropdown" class="filter-items filters">
+                            <option value="All Years" selected>All Years</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                            <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                            <option value="2015">2015</option>
+                            <option value="2014">2014</option>
+                            <option value="2013">2013</option>
+                            <option value="2012">2012</option>
+                            <option value="2011">2011</option>
+                            <option value="90's">90's</option>
+                            <option value="80's">80's</option>
+                            <option value="Older">Older</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+            <div class="domestic">
+                <div class="domestic-art latest-slider">
+                    <div class="domestic-art-items">
+                        <img src="/img/local/4th republic movie art.jpg" alt="4th republic" />
+                        <a href="#">
+                            <div class="overlay">
+                                <div class="quick-summary">Add Summary</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="domestic-art-items">
+                        <img src="/img/local/Alter date movie art.jpg" alt="The Alter date" />
+                        <a href="#">
+                            <div class="overlay">
+                                <div class="quick-summary">Add Summary</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="domestic-art-items">
+                        <img src="/img/local/Jumbled movie art.jpg" alt="Jumbled" />
+                        <a href="#">
+                            <div class="overlay">
+                                <div class="quick-summary">Add Summary</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="domestic-art-items">
+                        <img src="/img/local/King of boys movie art.jpg" alt="King of boys" />
+                        <a href="#">
+                            <div class="overlay">
+                                <div class="quick-summary">Add Summary</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="domestic-art-items">
+                        <img src="/img/local//Knockout movie art.jpg" alt="Knockout" />
+                        <a href="#">
+                            <div class="overlay">
+                                <div class="quick-summary">Add Summary</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="domestic-art-items">
+                        <img src="/img/local/Lion Heart movie art.jpg" alt="Lionheart" />
+                        <a href="#">
+                            <div class="overlay">
+                                <div class="quick-summary">Add Summary</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="domestic-art-items">
+                        <img src="/img/local/Nimbe movie art.jpg" alt="Nimbe" />
+                        <a href="#">
+                            <div class="overlay">
+                                <div class="quick-summary">Add Summary</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="domestic-art-items">
+                        <img src="/img/local/Odaju movie art.png" alt="Odaju" />
+                        <a href="#">
+                            <div class="overlay">
+                                <div class="quick-summary">Add Summary</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="domestic-art-items">
+                        <img src="/img/local/Yardie movie art.jpg" alt="Yardie" />
+                        <a href="#">
+                            <div class="overlay">
+                                <div class="quick-summary">Add Summary</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="foreign-releases latest-slider rls-align">
+
+                <p>Latest Foreign Releases | <a href="/watch-all" class="watch-all">Watch All</a></p>
+                <div class="drop-down">
+                    <form class="filter-movie">
+                        <select name="dropdown" class="filter-items filters">
+                            <option value="All Genres" selected>All Genres</option>
+                            <option value="Action">Action</option>
+                            <option value="Adventure">Adventure</option>
+                            <option value="Animation">Animation</option>
+                            <option value="Comedy">Comedy</option>
+                            <option value="Documentary">Documentary</option>
+                            <option value="Drama">Drama</option>
+                            <option value="Family">Family</option>
+                            <option value="Fantasy">Fantasy</option>
+                            <option value="Horror">Horror</option>
+                            <option value="Rom-Com">Rom-Com</option>
+                            <option value="Sci-Fi">Sci-Fi</option>
+                            <option value="Thriller">Thriller</option>
+                        </select>
+                    </form>
+                    <form class="filter-year">
+                        <select name="dropdown" class="filter-items filters">
+                            <option value="All Years" selected>All Years</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                            <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                            <option value="2015">2015</option>
+                            <option value="2014">2014</option>
+                            <option value="2013">2013</option>
+                            <option value="2012">2012</option>
+                            <option value="2011">2011</option>
+                            <option value="90's">90's</option>
+                            <option value="80's">80's</option>
+                            <option value="Older">Older</option>
+                        </select>
+                    </form>
+                </div>
+            </div>
+            <div class="foreign">
+                <div class="foreign-art latest-slider">
+                    <div class="foreign-art-items">
+                        <img src="/img/foreign/Amar movie art.jpg" alt="Amar" />
+                        <a href="#">
+                            <div class="overlay">
+                                <div class="quick-summary">Add Summary</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="foreign-art-items">
+                        <img src="/img/foreign/Avengers movie art.png" alt="Avengers" />
+                        <a href="#">
+                            <div class="overlay">
+                                <div class="quick-summary">Add Summary</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="foreign-art-items">
+                        <img src="/img/foreign/Beyonce homecoming movie art.jpg" alt="Beyonce's Homecoming" />
+                        <a href="#">
+                            <div class="overlay">
+                                <div class="quick-summary">Add Summary</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="foreign-art-items">
+                        <img src="/img/foreign/Captain marvel movie art.jpg" alt="Captain Marvel" />
+                        <a href="#">
+                            <div class="overlay">
+                                <div class="quick-summary">Add Summary</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="foreign-art-items">
+                        <img src="/img/foreign/Cold pursuit movie art.jpg" alt="Cold pursuit" />
+                        <a href="#">
+                            <div class="overlay">
+                                <div class="quick-summary">Add Summary</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="foreign-art-items">
+                        <img src="/img/foreign/GOT movie art.jpg" alt="Game of Thrones" />
+                        <a href="#">
+                            <div class="overlay">
+                                <div class="quick-summary">Add Summary</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="foreign-art-items">
+                        <img src="/img/foreign/Missing link movie art.jpg" alt="Missing link" />
+                        <a href="#">
+                            <div class="overlay">
+                                <div class="quick-summary">Add Summary</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="foreign-art-items">
+                        <img src="/img/foreign/Shazam movie art.jpg" alt="Shazam" />
+                        <a href="#">
+                            <div class="overlay">
+                                <div class="quick-summary">Add Summary</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="foreign-art-items">
+                        <img src="/img/foreign/Us movie art.jpg" alt="Us" />
+                        <a href="#">
+                            <div class="overlay">
+                                <div class="quick-summary">Add Summary</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Flexbox Display -->
+        </section>
+
+        <!-- Promo Section -->
+        <section class="promo">
+            <div class="watch relative">
+                <div class="watch-content line">
+                    <!-- Use pseudo element to add a line-->
+                    <h4 class="barlow">Watch Everywhere.</h4>
+                    <p class="poppins">
+                        Watch unlimited Movies and TV shows on your Phone, Tablet, Laptop,
+                        and TV without paying more.
+                    </p>
+                    <a class="btn btn-primary poppins" href="#">Watch free for 30 days</a>
+                </div>
+            </div>
+            <div class="devices">
+                <img src="img/devices-component.png" alt="Device" class="promo-img" />
+            </div>
+            <div class="tv">
+                <img src="img/tv-component.png" alt="TV" class="promo-img" />
+            </div>
+            <div class="enjoy relative">
+                <div class="enjoy-content line">
+                    <!-- Use pseudo element to add a line-->
+                    <h4 class="barlow">Enjoy on your TV.</h4>
+                    <p class="poppins">
+                        Watch on Smart TV, Playstation, Xbox, Chromecast, Apple TV,
+                        Blu-ray players, and more.
+                    </p>
+                    <a class="btn btn-primary poppins" href="#">Watch free for 30 days</a>
+                </div>
+            </div>
+            <!-- Grid Layout -->
+        </section>
+
+        <!-- Coming Soon -->
+        <section id="soon" class="coming-soon">
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <img src="img/coming soon/Bond 25 image art.jpg" style="width:100%">
+                    <div class="text">Bond 25</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="img/coming soon/Pirates-Of-The-Caribbean-6-Reboot-No-Johnny.jpg" style="width:100%">
+                    <div class="text">Pirates of the Caribbean 6</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="img/coming soon/815755.jpg" style="width:100%">
+                    <div class="text">Spiderman Home Coming</div>
+                </div>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+            <div class="overlay-text">
+                <h2 class="barlow">Releases Coming Soon</h2>
+                <div class="play-video">
+                    <span class="fas fa-play-circle fa-3x"></span>
+                    <a href="/play-video">Play Video</a>
+                </div>
+            </div>
+            <!-- All Videos -->
+        </section>
+
+        <footer>
+            <div class="see-it line">
+                <p class="poppins out-now">Movidom Newsletter</p>
+                <h2 class="barlow">
+                    See it First
+                </h2>
+
+                <form class="newsletter">
+                    <input type="text" class="newsletter-item" placeholder="Enter your Email here*" />
+                    <a class="btn-sub" href="#" type="button">Subscribe</a>
+                </form>
+            </div>
+            <div class="copy-right">
+                &copy; 2019 Movidom. | <a href="/Contact/.contact.html">Contact Us</a> | Proudly created by SGA-0.5 Group 4.
+                <i class="fab fa-instagram fa-1x"></i>
+                <i class="fab fa-youtube fa-1x"></i>
+                <i class="fab fa-twitter fa-1x"></i>
+                <i class="fab fa-facebook-f fa-1x"></i>
+            </div>
+        </footer>
+
+    </div> <!-- End of wrapper -->
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 3000); // Change image every 2 seconds
+        }
+    </script>
+</body>
+
+</html>
