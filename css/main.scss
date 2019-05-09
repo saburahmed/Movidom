@@ -1,3 +1,9 @@
+@mixin mQ($arg) {
+    @media screen and (max-width: $arg) {
+        @content;
+    }    
+}
+
 :root {
     --bg-color: #000;
     --primary-color: #fff;
@@ -189,6 +195,14 @@ html, body {
     p {
         margin-top: 25px;
     }
+    @include mQ(768px){
+        border-left: none;
+        padding: 0 auto;
+        text-align: center;
+        h2 {
+            font-size: 3rem;
+        }
+    }
 }
 
 .video-wrapper {
@@ -218,6 +232,12 @@ html, body {
 .featured {
     width: 100%;
     height: 90vh;
+    @include mQ(768px) {
+        width: 480px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .featured-item {
         width: 600px;
         text-align: justify;
@@ -527,11 +547,6 @@ footer {
     } 
 }
 
-@mixin mQ($arg) {
-    @media screen and (max-width: $arg) {
-        @content;
-    }    
-}
 
 
 // MEDIA QUERY
