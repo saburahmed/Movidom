@@ -13,6 +13,7 @@
 }
 
 body {
+  background-color: var(--bg-color);
   font-family: var(--text-font);
   color: var(--primary-color);
   letter-spacing: 0.02em;
@@ -84,11 +85,21 @@ html, body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: var(--bg-color);
-  opacity: 0.3;
   color: var(--primary-color);
   height: 75px;
   padding: 1em;
+}
+
+.top-nav::before {
+  content: '';
+  background-color: var(--bg-color);
+  opacity: 0.3;
+  height: 75px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .menu {
@@ -133,7 +144,7 @@ html, body {
 .menu-button::before,
 .menu-button::after {
   display: block;
-  background-color: #fff;
+  background-color: var(--primary-color);
   position: absolute;
   height: 4px;
   width: 30px;
@@ -170,6 +181,103 @@ html, body {
           transform: rotate(-405deg);
 }
 
+.line {
+  width: 500px;
+  border-left: 1px solid var(--primary-color);
+  padding: 0 50px;
+}
+
+.line h4 {
+  line-height: 0.75;
+}
+
+.line p {
+  margin-top: 25px;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .line {
+  width: 100%;
+  padding: 0 20px;
+}
+
+footer .newsletter-item, footer .btn-sub {
+  height: 35px;
+  background: var(--bg-color);
+  font-family: var(--text-font);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+footer ::-webkit-input-placeholder {
+  color: var(--primary-color);
+}
+
+footer :-ms-input-placeholder {
+  color: var(--primary-color);
+}
+
+footer ::-ms-input-placeholder {
+  color: var(--primary-color);
+}
+
+footer ::placeholder {
+  color: var(--primary-color);
+}
+
+footer .newsletter-item {
+  width: 500px;
+  padding: 20px;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+footer .btn-sub {
+  width: 200px;
+  padding: 8.5px 25px;
+  border: 2px solid var(--secondary-color);
+  color: var(--secondary-color);
+  text-transform: uppercase;
+}
+
+footer .copy-right {
+  display: inline-block;
+  font-size: 14px;
+  margin: 30px 200px;
+  color: gray;
+}
+
+footer .see-it {
+  margin-left: 200px;
+}
+
+footer .see-it .out-now {
+  margin: 0;
+  line-height: 0.8;
+}
+
+footer .see-it h2 {
+  margin-bottom: 2rem;
+}
+
+footer .newsletter {
+  margin-left: 0;
+}
+
+footer .fab {
+  padding: 10px;
+  color: gray;
+}
+
 @media (max-width: 700px) {
   .menu-button-container {
     display: -webkit-box;
@@ -192,6 +300,7 @@ html, body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    display: none;
   }
   #menu-toggle ~ .menu li {
     height: 0;

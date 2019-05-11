@@ -237,7 +237,7 @@ html, body {
   background-size: cover;
   top: 0;
   left: 0;
-  width: 200%;
+  width: 125%;
   height: 100vh;
   overflow: hidden;
   z-index: -10;
@@ -280,7 +280,6 @@ html, body {
 
 .featured .featured-item {
   width: 600px;
-  text-align: justify;
   position: relative;
   top: 150px;
   left: 250px;
@@ -293,6 +292,7 @@ html, body {
 
 .featured .featured-item .mv-summary {
   width: 375px;
+  text-align: justify;
 }
 
 .featured .featured-item .mv-title {

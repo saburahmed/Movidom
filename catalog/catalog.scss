@@ -166,9 +166,53 @@ html, body {
   }
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .featured {
+    height: 90vh;
+    .featured-item {
+      width: 600px;
+      text-align-last: left;
+      position: relative;
+      left: 15%;
+      top: 30%;
+    }
+  }
+  
+  .btn {
+    background: var(--secondary-color);
+    border: none;
+    padding: 0.5rem 2.5rem;
+    margin-top: 30px;
+    color: var(--primary-color);
+    font-size: 1rem;
+    display: inline-block;
+    box-shadow: var(--shadow);
+    &:hover {
+      color: var(--primary-color);
+      background: rgba(var(--secondary-color), 0);
+    }
+  }
+  
+  .catalog {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: auto;
+    padding: 0 30px;
+  }
+  
+  .text {
+    width: 250px;
+    padding: 0 0px 20px 0;
+  }
+
 footer {
   display: flex;
   flex-direction: column;
+  margin-top: 100px;
   .line {
       width: 100%;
       padding: 0 20px;
