@@ -6,7 +6,6 @@
     --text-font: 'Poppins', sans-serif;
     --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
     --gray-color: #A8A8A8;
-
 }
 
 *, *::before, *::after {
@@ -156,64 +155,76 @@ html, body {
   transform: rotate(-405deg);
 }
 
+.featured {
+    width: 75%;
+    margin: 100px auto;
+    display: flex;
+    justify-content: space-around;
+    .link-back {
+        position: absolute;
+        top: 18%;
+        left: 15%;
+        color: var(--gray-color);
+    }
+    .featMovies {
+        h2 {
+            font-size: 2.8rem;
+            padding-bottom: 2rem;
+            font-weight: 250;
+        }
+        img {
+            max-width: 650px;
+        }
+        .mv-title {
+            letter-spacing: 0.5;
+            text-shadow: var(--shadow);
+        }
+    }
+    .featured-item {
+        .out-now {
+            margin: 0 auto;
+            color: var(--gray-color);
+        }
+        .mv-summary {
+            width: 350px;
+            margin-top: 30px;           
+            margin-bottom: 40px;
+        }
+    }
+}
+
 .line {
-  width: 500px;
+  width: 350px;
   border-left: 1px solid var(--primary-color);
-  padding: 0 50px;
+  padding-left: 50px;
   h4 {
       line-height: 0.75;
   }
-p {
-    margin-top: 25px;
+  p {
+      margin-top: 25px;
+  }
+}
+
+.btn {
+    background: var(--secondary-color);
+    border: none;
+    padding: 0.5rem 2.5rem;
+    margin-top: 30px;
+    color: var(--primary-color);
+    font-size: 1rem;
+    display: inline-block;
+    box-shadow: var(--shadow);
+    &:hover {
+        color: var(--primary-color);
+        background: rgba(var(--secondary-color), 0);
     }
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-}
-
-.featured {
-    height: 90vh;
-    .featured-item {
-        width: 600px;
-        text-align-last: left;
-        position: relative;
-        left: 15%;
-        top: 30%;
-        text-align: justify;
-    }
-}
-
-.our-info {
-    height: 100vh;
-    display: grid;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-    grid-template-columns: repeat(3, 1fr);
-}
-
-.name {
-    font-size: 30px;
-    font-weight: bolder;
-}
-
-.photo {
-    height: 400px;
-    width: 300px;
-}
-
-.email {
-    font-size: 14px;
-    
 }
 
 
 footer {
   display: flex;
   flex-direction: column;
+//   margin-top: 100px;
   .line {
       width: 100%;
       padding: 0 20px;
@@ -257,7 +268,6 @@ footer {
       .out-now {
           margin: 0;
           line-height: 0.8;
-          color: var(--gray-color);
       }
       h2 {
           margin-bottom: 2rem;

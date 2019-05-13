@@ -5,6 +5,7 @@
   --header-font: 'Barlow', sans-serif;
   --text-font: 'Poppins', sans-serif;
   --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  --gray-color: #A8A8A8;
 }
 
 *, *::before, *::after {
@@ -307,7 +308,7 @@ footer .copy-right {
   display: inline-block;
   font-size: 14px;
   margin: 30px 200px;
-  color: gray;
+  color: var(--gray-color);
 }
 
 footer .see-it {
@@ -317,6 +318,7 @@ footer .see-it {
 footer .see-it .out-now {
   margin: 0;
   line-height: 0.8;
+  color: var(--gray-color);
 }
 
 footer .see-it h2 {
@@ -329,7 +331,7 @@ footer .newsletter {
 
 footer .fab {
   padding: 10px;
-  color: gray;
+  color: var(--gray-color);
 }
 
 @media (max-width: 700px) {
@@ -388,4 +390,4 @@ footer .fab {
     border-bottom: 1px solid #444;
   }
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=about.css.map */

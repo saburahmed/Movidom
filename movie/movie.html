@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Barlow:500|Poppins:200" rel="stylesheet" />
+    <title>Movidom - Movie Page</title>
+    <link rel="stylesheet" href="movie.css" />
+</head>
+
+<body>
+    <!-- Top Nav Menu == Responsive -->
+    <nav class="top-nav">
+        <div class="brand">
+            <a class="logo" href="/movidom.ng"><img src="../img/Movidom_Crop.png" alt="Movidom" /></a>
+        </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+        </label>
+        <ul class="menu">
+            <li><a href="../index.html" id="current">Home</a></li>
+            <li><a href="/stream-buy">Stream/Buy</a></li>
+            <li><a href="../index.html/#soon">Coming Soon</a></li>
+            <li><a href="../catalog/catalog.html">Catalog</a></li>
+            <li><a href="../about/About.html">About</a></li>
+            <li><i class="fas fa-search"></i></li>
+        </ul>
+    </nav>
+
+    <!-- Side Content -->
+    <main class="featured">
+        <a class="link-back" href="../catalog/catalog.html"> < Back to Catalogue</a>
+        <div class="featMovies">
+            <h2 class="mv-title barlow">Amar (2017) de Esteban Crespo</h2>
+            <img src="../img/foreign/amar.jpg" alt="AMAR" class="movie-img">
+        </div>
+        <div class="featured-item line">
+            <p class="poppins out-now">2h 35min | language | Producer | Director</p>
+            <div class="poppins mv-summary">
+                Began with the promise of an imminent threat on the world of men in
+                a fictional medieval-fantasy continent called Westeros. In the
+                opening scene, we see mysterious inhumane figures -- called White
+                Walkers -- attack three men who are ranging in the far north of
+                Westeros.
+
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis, dolores? Laborum distinctio optio minima fugit debitis quaerat quia dolor quod?
+            </div>
+            <a class="btn btn-primary poppins" href="#">Get Screening License</a>
+            <!-- Add a pseudo element here to add a vertical line! -->
+        </div>
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="see-it line">
+            <p class="poppins out-now">Movidom Newsletter</p>
+            <h2 class="barlow">
+                See it First
+            </h2>
+
+            <form class="newsletter">
+                <input type="text" class="newsletter-item" placeholder="Enter your Email here*" />
+                <a class="btn-sub" href="#" type="button">Subscribe</a>
+            </form>
+        </div>
+        <div class="copy-right">
+            &copy; 2019 Movidom. | <a href="/Contact/.contact.html">Contact Us</a> | Proudly created by SGA-0.5 Group 4.
+            <i class="fab fa-instagram fa-1x"></i>
+            <i class="fab fa-youtube fa-1x"></i>
+            <i class="fab fa-twitter fa-1x"></i>
+            <i class="fab fa-facebook-f fa-1x"></i>
+        </div>
+    </footer>
+</body>
+
+</html>
