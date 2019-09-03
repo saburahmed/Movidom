@@ -130,6 +130,93 @@ body {
   margin: 0 1rem;
 }
 
+/*Movie info result page*/
+.info-section {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  padding-left: 30px;
+}
+
+.thumbnails {
+  width: 300px;
+  height: 450px;
+}
+
+.info-poster {
+  width: 300px;
+  height: 450px;
+}
+
+.col-md-4 {
+  width: 300px;
+  height: 450px;
+}
+
+.col-md-8 {
+  width: 100%;
+}
+
+/* API search results */
+.search-container {
+  position: absolute;
+  z-index: 11;
+  top: 75px;
+  // height: 10000px;
+}
+
+.form-control {
+  height: 35px;
+  font-family: var(--text-font);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.search-button {
+  height: 35px;
+  background: var(--secondary-color);
+  border: none;
+  padding: 0.5rem 2.5rem;
+  color: var(--primary-color);
+  font-size: 1rem;
+  cursor: pointer;
+  -webkit-box-shadow: var(--shadow);
+  box-shadow: var(--shadow);
+}
+
+/* Style for API Search bar */
+#movies {
+  width: 100vw;
+  padding-left: 10px;
+  padding-right: 20px;
+  background: black;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+}
+
+.poster-container {
+  width: 250px;
+  text-align: center;
+}
+
+.title {
+  margin: 0px;
+}
+
+.col-md-3 {
+  width: 250px;
+}
+
+#movies img {
+  height: 350px;
+  width: 250px;
+}
+
+/* End of API Search bar */
+/* End of API search results */
+
 .menu-button-container {
   display: none;
   height: 100%;

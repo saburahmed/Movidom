@@ -2,13 +2,15 @@
   --bg-color: #000;
   --primary-color: #fff;
   --secondary-color: #ff5900;
-  --header-font: 'Barlow', sans-serif;
-  --text-font: 'Poppins', sans-serif;
+  --header-font: "Barlow", sans-serif;
+  --text-font: "Poppins", sans-serif;
   --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
-  --gray-color: #A8A8A8;
+  --gray-color: #a8a8a8;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -22,7 +24,8 @@ body {
   line-height: 1.6;
 }
 
-fieldset, img {
+fieldset,
+img {
   border: 0;
 }
 
@@ -34,7 +37,13 @@ li {
   font-family: var(--text-font);
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   font-family: var(--header-font);
 }
 
@@ -67,7 +76,8 @@ ul {
   padding: 0;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   height: 100%;
 }
@@ -92,7 +102,7 @@ html, body {
 }
 
 .top-nav::before {
-  content: '';
+  content: "";
   background-color: var(--bg-color);
   opacity: 0.3;
   height: 75px;
@@ -120,6 +130,91 @@ html, body {
   margin: 0 1rem;
 }
 
+/*Movie info result page*/
+.info-section {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  padding-left: 30px;
+}
+
+.thumbnails {
+  width: 300px;
+  height: 450px;
+}
+
+.info-poster {
+  width: 300px;
+  height: 450px;
+}
+
+.col-md-4 {
+  width: 300px;
+  height: 450px;
+}
+
+.col-md-8 {
+  width: 100%;
+}
+
+/* API search results */
+.search-container {
+  position: absolute;
+  z-index: 11;
+  top: 75px;
+}
+
+.form-control {
+  height: 35px;
+  font-family: var(--text-font);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.search-button {
+  height: 35px;
+  background: var(--secondary-color);
+  border: none;
+  padding: 0.5rem 2.5rem;
+  color: var(--primary-color);
+  font-size: 1rem;
+  cursor: pointer;
+  -webkit-box-shadow: var(--shadow);
+  box-shadow: var(--shadow);
+}
+
+/* Style for API Search bar */
+#movies {
+  width: 100vw;
+  padding-left: 10px;
+  padding-right: 20px;
+  background: black;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr [5];
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+}
+
+.poster-container {
+  width: 250px;
+  text-align: center;
+}
+
+.title {
+  margin: 0px;
+}
+
+.col-md-3 {
+  width: 250px;
+}
+
+#movies img {
+  height: 350px;
+  width: 250px;
+}
+
+/* End of API Search bar */
+/* End of API search results */
 .menu-button-container {
   display: none;
   height: 100%;
@@ -157,12 +252,12 @@ html, body {
 }
 
 .menu-button::before {
-  content: '';
+  content: "";
   margin-top: -8px;
 }
 
 .menu-button::after {
-  content: '';
+  content: "";
   margin-top: 8px;
 }
 
@@ -211,17 +306,6 @@ html, body {
 
 .line p {
   margin-top: 25px;
-}
-
-@media screen and (max-width: 768px) {
-  .line {
-    border-left: none;
-    padding: 0 auto;
-    text-align: center;
-  }
-  .line h2 {
-    font-size: 3rem;
-  }
 }
 
 .video-wrapper {
@@ -284,7 +368,7 @@ html, body {
   position: relative;
   top: 150px;
   left: 250px;
-  z-index: 5;
+  z-index: -5;
 }
 
 .featured .featured-item .out-now {
@@ -319,7 +403,8 @@ html, body {
   padding: 10px;
 }
 
-.domestic-releases, .foreign-releases {
+.domestic-releases,
+.foreign-releases {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -381,7 +466,8 @@ form {
   background: var(--primary-color);
 }
 
-.domestic-releases p, .foreign-releases p {
+.domestic-releases p,
+.foreign-releases p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -397,7 +483,8 @@ form {
       justify-content: space-around;
 }
 
-.domestic-art-items, .foreign-art-items {
+.domestic-art-items,
+.foreign-art-items {
   position: relative;
 }
 
@@ -414,7 +501,8 @@ form {
   /* background-color: var(--secondary-color); */
 }
 
-.domestic-art-items:hover .overlay, .foreign-art-items:hover .overlay {
+.domestic-art-items:hover .overlay,
+.foreign-art-items:hover .overlay {
   opacity: 0.7;
 }
 
@@ -444,15 +532,14 @@ form {
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
-      grid-template-areas: 'watch devices'
- 'tv enjoy';
+      grid-template-areas: "watch devices" "tv enjoy";
 }
 
 .promo .watch {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: watch;
-  padding: auto  50px  auto 30%;
+  padding: auto 50px auto 30%;
   margin-left: 150px;
 }
 
@@ -565,7 +652,7 @@ form {
 
 @-webkit-keyframes fade {
   from {
-    opacity: .4;
+    opacity: 0.4;
   }
   to {
     opacity: 1;
@@ -574,7 +661,7 @@ form {
 
 @keyframes fade {
   from {
-    opacity: .4;
+    opacity: 0.4;
   }
   to {
     opacity: 1;
@@ -596,7 +683,8 @@ footer .line {
   padding: 0 20px;
 }
 
-footer .newsletter-item, footer .btn-sub {
+footer .newsletter-item,
+footer .btn-sub {
   height: 35px;
   background: var(--bg-color);
   font-family: var(--text-font);

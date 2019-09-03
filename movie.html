@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Barlow:500|Poppins:200" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" /> -->
+    <title>Movidom - Rent, Buy, Watch Movies and TV Online</title>
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+        <div class="container">
+                <!-- Top Nav Menu == Responsive -->
+                <nav class="top-nav">
+                    <div class="brand">
+                        <a class="logo" href="/movidom.ng"><img src="img/Movidom_Crop.png" alt="Movidom" /></a>
+                    </div>
+                    <input id="menu-toggle" type="checkbox" />
+                    <label class='menu-button-container' for="menu-toggle">
+                        <div class='menu-button'></div>
+                    </label>
+                    <ul class="menu">
+                        <li><a href="/index.html" id="current">Home</a></li>
+                        <li><a href="/stream-buy">Stream/Buy</a></li>
+                        <li><a href="#soon">Coming Soon</a></li>
+                        <li><a href="catalog/catalog.html">Catalog</a></li>
+                        <li><a href="/about/about.html">About</a></li>
+                    </ul>
+                    </nav>
+        
+                <!-- Where the API search result will be -->
+                <div class="movieInfo-Container">
+                    <div id="movie"></div>
+                </div>
+
+        <footer>
+                <div class="see-it line">
+                    <p class="poppins out-now">Movidom Newsletter</p>
+                    <h2 class="barlow">
+                        See it First
+                    </h2>
+    
+                    <form class="newsletter">
+                        <input type="text" class="newsletter-item" placeholder="Enter your Email here*" />
+                        <a class="btn-sub" href="#" type="button">Subscribe</a>
+                    </form>
+                </div>
+                <div class="copy-right">
+                    &copy; 2019 Movidom. | <a href="/contact/contact.html">Contact Us</a> | Proudly created by SGA-0.5 Group
+                    4.
+                    <i class="fab fa-instagram fa-1x"></i>
+                    <i class="fab fa-youtube fa-1x"></i>
+                    <i class="fab fa-twitter fa-1x"></i>
+                    <i class="fab fa-facebook-f fa-1x"></i>
+                </div>
+            </footer>
+        </div>
+        <!-- End of Wrapper -->
+
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="js/main.js"></script>
+        <script>
+            getMovie();
+        </script>
+</body>
+</html>

@@ -22,7 +22,7 @@
         <!-- Top Nav Menu == Responsive -->
         <nav class="top-nav">
             <div class="brand">
-                <a class="logo" href="/movidom.ng"><img src="img/Movidom_Crop.png" alt="Movidom" /></a>
+                <a class="logo" href="#"><img src="img/Movidom_Crop.png" alt="Movidom" /></a>
             </div>
             <input id="menu-toggle" type="checkbox" />
             <label class='menu-button-container' for="menu-toggle">
@@ -34,10 +34,19 @@
                 <li><a href="#soon">Coming Soon</a></li>
                 <li><a href="catalog/catalog.html">Catalog</a></li>
                 <li><a href="/about/about.html">About</a></li>
-                <li><i class="fas fa-search"></i></li>
             </ul>
+            <form class="form-inline px-3">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search...">
+                    <button type="button" class="search-button"><i class="fas fa-search text-muted"></i></button>
+                </div>
+            </form>
         </nav>
 
+        <!-- Where the API search result will be -->
+        <div class="search-container">
+            <div id="movies" class="row"></div>
+        </div>
 
         <!-- Featured Content -->
         <main class="featured">
@@ -467,27 +476,11 @@
 
     </div> <!-- End of wrapper -->
 
-    <script>
-        var slideIndex = 0;
-        showSlides();
-
-        function showSlides() {
-            var i;
-            var slides = document.getElementsByClassName("mySlides");
-            var dots = document.getElementsByClassName("dot");
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            slideIndex++;
-            if (slideIndex > slides.length) { slideIndex = 1 }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-            setTimeout(showSlides, 3000); // Change image every 2 seconds
-        }
-    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
